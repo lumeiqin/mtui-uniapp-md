@@ -22,5 +22,6 @@ git clone https://github.com/lacey-lmq/mtui-uniapp.git
 @import "./components/mt-theme/index.scss";
 ```
 
-
-[//]: # (<iframe width='320px' height='568px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/" style="position:fixed;right:0;top:50%;transform: translateY&#40;-50%&#41;"></iframe>)
+### 4. [demo演示](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/)
+#
+<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/"></iframe>
