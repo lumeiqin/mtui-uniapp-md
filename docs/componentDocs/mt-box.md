@@ -4,6 +4,8 @@
 
 [//]: # (<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/box"></iframe>)
 
+[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/box)
+
 ```html
 <!-- 基础用法 -->
 <mt-box>

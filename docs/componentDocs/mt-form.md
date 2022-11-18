@@ -4,6 +4,8 @@
 
 [//]: # (<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form"></iframe>)
 
+[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form)
+
 ```html
 <mt-form ref="mtForm" :formData="textFormData" 
          @change="changeForm">
@@ -340,8 +342,8 @@ export default {
 | phone         | -                                             | `String`                  | 表单中发送验证码的手机 name，只用于 `type="code"`                                                         | -                                             | false    |
 | phoneNum      | -                                             | `tel`                     | 表单中发送验证码的手机号，只用于 `type="code"`                                                             | -                                             | false    |
 | column        | 2                                             | `Number`                  | 表示选择器的粒度，只用于 `type="multiSelector"`                                                        | `2` `3` `4` `5`                               | false    |
-| start         | 1970-01-01 00:00:00                           | `String`                  | 表示有效日期范围的开始，字符串格式为"YYYY-MM-DD hh:mm:ss"，只用于 `type="date"`                                  | -                                             | false    |
-| end           | 2099-12-31 23:59:59                           | `String`                  | 表示有效日期范围的结束，字符串格式为"YYYY-MM-DD hh:mm:ss"，只用于 `type="date"`                                  | -                                             | false    |
+| start         | 1970-01-01 00:00:00                           | `String`                  | 表示有效日期范围的开始，字符串格式为`YYYY-MM-DD hh:mm:ss`，只用于 `type="date"`                                  | -                                             | false    |
+| end           | 2099-12-31 23:59:59                           | `String`                  | 表示有效日期范围的结束，字符串格式为`YYYY-MM-DD hh:mm:ss`，只用于 `type="date"`                                  | -                                             | false    |
 | field         | second                                        | `String`                  | 表示选择器的粒度，只用于 `type="date"`                                                                 | `year` `month` `day` `hour` `minute` `second` | false    |
 | tips          | 支持上传图片、视频，附件, 单个附件大小不得超过100M                  | `String`                  | 附件上传提示语                                                                                    | -                                             | false    |
 | fileType      | `['pic', 'video', 'audio']`                     | `Array`                   | 附件上传的类型                                                                                    | -                                             | false    |
