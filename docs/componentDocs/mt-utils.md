@@ -16,15 +16,17 @@ Vue.prototype.$mt = new Utils({
 
     serveMode: 'formal', // 当前环境
 
-    serveModeArr: ['default'], // 模块接口前缀列表
+    serveModeArr: ['default', 'login'], // 模块接口前缀列表
 
     // 环境对象集
     serveModeObj: {
         online: {
-            defaultHost: 'http://gz.gisocn.com:6342/'
+            defaultHost: 'http://gz.gisocn.com:6342/',
+            loginHost: 'http://gz.login.com:6342/',
         },
         formal: {
-            defaultHost: 'http://gz.gisocn.com:6342/'
+            defaultHost: 'http://gz.gisocn.com:6342/',
+            loginHost: 'http://gz.login.com:6342/',
         }
     },
 

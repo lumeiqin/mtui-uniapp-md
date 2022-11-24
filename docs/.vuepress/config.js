@@ -73,7 +73,35 @@ module.exports = {
                     {
                         title: 'Utils 引入',
                         path: '/componentDocs/mt-utils'
-                    }
+                    },
+                    {
+                        title: 'Get 请求',
+                        path: '/componentDocs/mt-utils-get'
+                    },
+                    {
+                        title: 'Post 请求',
+                        path: '/componentDocs/mt-utils-post'
+                    },
+                    {
+                        title: 'File 请求',
+                        path: '/componentDocs/mt-utils-file'
+                    },
+                    {
+                        title: '水印背景',
+                        path: '/componentDocs/mt-utils-waterMark'
+                    },
+                    {
+                        title: '时间格式化',
+                        path: '/componentDocs/mt-utils-formatDate'
+                    },
+                    {
+                        title: '附件地址完善',
+                        path: '/componentDocs/mt-utils-prefixUrl'
+                    },
+                    {
+                        title: 'isEmpty 判空',
+                        path: '/componentDocs/mt-utils-isEmpty'
+                    },
                 ]
             },
         ]
