@@ -42,12 +42,12 @@ export default {
 
 | 参数       | 默认值            | 类型   | 说明           | 可选值 |
 | ---------- | ----------------- | ------ | -------------- | ------ |
-| color      | #333              | `String` | 标签字体颜色   | -      |
+| color      | `#333`              | `String` | 标签字体颜色   | -      |
 | size       | 24rpx             | `String` | 标签字体大小   | -      |
 | lineHeight | 24rpx             | `String` | 标签字体的行高 | -       |
-| border     | 1px solid #CCC9C9 | `String` | 标签边框       | -      |
-| padding    | 6rpx 10rpx           | `String` | 标签的padding  | -      |
-| bg         | #CCC9C9           | `String` | 标签背景       | -      |
+| border     | `1px solid #CCC9C9` | `String` | 标签边框       | -      |
+| padding    | `6rpx 10rpx`           | `String` | 标签的padding  | -      |
+| bg         | `#CCC9C9`           | `String` | 标签背景       | -      |
 | radius     | 20rpx             | `String` | 标签圆角       | -      |
 | scale      | 1                 | `Number` | 标签缩放级别   | -      |
 

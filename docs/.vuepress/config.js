@@ -66,7 +66,16 @@ module.exports = {
                     }
                 ]
             },
-
+            {
+                title: 'Utils 配置',
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                    {
+                        title: 'Utils 引入',
+                        path: '/componentDocs/mt-utils'
+                    }
+                ]
+            },
         ]
     }
 }

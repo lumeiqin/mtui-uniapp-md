@@ -65,8 +65,8 @@ export default {
 
 | 参数         | 默认值  | 类型   | 说明                              | 可选值 |
 | ------------ | ------- | ------ | --------------------------------- | ------ |
-| confirmColor | #2194F2 | `String` | 确定按钮的文字颜色                | -      |
-| cancelColor  | #333333 | `String` | 取消按钮的文字颜色                | -      |
+| confirmColor | `#2194F2` | `String` | 确定按钮的文字颜色                | -      |
+| cancelColor  | `#333333` | `String` | 取消按钮的文字颜色                | -      |
 | align        | left    | `String` | 提示的内容文字位置，`参考textAlign` | -      |
 
 # Slots

@@ -95,8 +95,8 @@ export default {
 | 参数     | 默认值      | 类型   | 说明          | 可选值 |
 | -------- | ----------- | ------ | ------------- | ------ |
 | iconSize  | -           | `String` | icon的大小    | -       |
-| iconPadding  | 0 0 14rpx 0 | `String` | icon的padding | -      |
-| color    | #424242     | `String` | 字体颜色      | -      |
+| iconPadding  | `0 0 14rpx 0` | `String` | icon的padding | -      |
+| color    | `#424242`     | `String` | 字体颜色      | -      |
 | fontsize | 24rpx       | `String` | 字体大小      | -      |
 
 ### data 说明

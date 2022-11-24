@@ -79,7 +79,7 @@ export default {
 | height   | 84rpx                           | `String`  | 按钮高度                              | -      |
 | color    | #2194F2                         | `String`  | `default：按钮背景颜色` `hollow：按钮字体和边框颜色` | -      |
 | fontsize | 30rpx                           | `String`  | 字体大小                              | -      |
-| shadow   | 0px 3px 8px 0px rgba(0,0,0,0.1) | `String`  | 按钮阴影                              | -      |
+| shadow   | `0px 3px 8px 0px rgba(0,0,0,0.1)` | `String`  | 按钮阴影                              | -      |
 | noBorder | false                           | `Boolean` | `hollow：是否不显示边框`                    | -      |
 
 # Slots

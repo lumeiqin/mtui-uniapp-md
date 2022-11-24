@@ -204,7 +204,7 @@ export default {
 | thumbType     | circle                                          | `String`  | 左侧图片的形状                                                                  | `circle` `square` |
 | thumbTagSM    | false                                           | `Boolean` | 是否缩小左侧图片的角标                                                          | -                 |
 | showExtraIcon | false                                           | `Boolean` | 左侧图标，只有当thumb为空，才能使用此参数                                       | -                 |
-| extraIcon     | `{ type: 'contact', color: '#000000', size: 20 }` | `Object`  | 左侧图标的配置参数：`type：图标图案（参考示例）` `color：图标颜色` `size：图标大小` | -                  |
+| extraIcon     | { `type: 'contact'`, `color: '#000000'`, `size: 20` } | `Object`  | 左侧图标的配置参数：`type：图标图案（参考示例）` `color：图标颜色` `size：图标大小` | -                  |
 | ellipsis      | 2                                               | `Number`  | 标题显示的行数                                                                  | -                 |
 | showArrow     | false                                           | `Boolean` | 是否显示箭头                                                                    | -                 |
 | showCheck     | false                                           | `Boolean` | 是否显示checkbox                                                                | -                 |
