@@ -30,6 +30,9 @@ module.exports = {
                     }, {
                         title: 'Card 卡片',
                         path: '/componentDocs/mt-card'
+                    },{
+                        title: 'Collapse 折叠面板',
+                        path: '/componentDocs/mt-collapse'
                     }, {
                         title: 'Form 表单',
                         path: '/componentDocs/mt-form'
