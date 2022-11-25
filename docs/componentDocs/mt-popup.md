@@ -1,5 +1,7 @@
 # Popup
+
 ***
+
 #
 
 [//]: # (<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/popup"></iframe>)
@@ -7,22 +9,41 @@
 [查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/popup)
 
 ```html
-
+<!-- 基础用法 -->
 <mt-popup ref="popup">
     <view style="width: 100%;height: 200px;background: #fff;">
-        这是模态框
+        bottom
     </view>
 </mt-popup>
+<mt-button @click="openModal('popup')">显示底部模态框</mt-button>
 
-<mt-button @click="openModal">显示模态框</mt-button>
+
+
+<!-- type: center -->
+<mt-popup ref="popup1" type="center">
+    <view style="width: 100%;height: 200px;background: #fff;">
+        center
+    </view>
+</mt-popup>
+<mt-button @click="openModal('popup1')">显示中间模态框</mt-button>
+
+
+
+<!-- type: top -->
+<mt-popup ref="popup2" type="top">
+    <view style="width: 100%;height: 200px;background: #fff;">
+        center
+    </view>
+</mt-popup>
+<mt-button @click="openModal('popup2')">显示顶部模态框</mt-button>
 ```
 
 ```javascript
 export default {
     methods: {
-        openModal() {
-            this.$refs.popup.open()
-        }
+        openModal(type) {
+            this.$refs[type].open()
+        },
     }
 } 
 ```

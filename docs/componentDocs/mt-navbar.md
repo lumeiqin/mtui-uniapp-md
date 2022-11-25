@@ -54,12 +54,12 @@ export default {
 
 ### config 说明
 
-| 参数 | 默认值 | 类型 | 说明 | 可选值 |
-| ---- | ------ | ---- | ---- | ------ |
-| nobg  | false   | `Boolean` | 是否无背景          | -      |   
+| 参数 | 默认值       | 类型 | 说明 | 可选值 |
+| ---- |-----------| ---- | ---- | ------ |
+| nobg  | false     | `Boolean` | 是否无背景          | -      |   
 | bg    | `#2194F2` | `String`  | 背景                | -      |  
-| back  | true    | `Boolean` | 是否显示返回箭头    | -      |    
-| color | `#333`    | `String`  | `nobg=true：标题颜色` | -      |   
+| back  | true      | `Boolean` | 是否显示返回箭头    | -      |    
+| color | `#fff`    | `String`  | 标题颜色 | -      |   
 
 # Slots
 
