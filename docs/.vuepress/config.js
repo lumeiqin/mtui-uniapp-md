@@ -6,7 +6,7 @@ module.exports = {
     themeConfig: {
         activeHeaderLinks: true,
         nav: [{
-            text: 'Home', link: '/'
+            text: 'Npm', link: 'https://www.npmjs.com/package/mtui-uni'
         }, {
             text: 'Github', link: 'https://github.com/lacey-lmq/mtui-uniapp.git'
         }, {
@@ -33,10 +33,7 @@ module.exports = {
                     },{
                         title: 'Collapse 折叠面板',
                         path: '/componentDocs/mt-collapse'
-                    }, {
-                        title: 'Form 表单',
-                        path: '/componentDocs/mt-form'
-                    }, {
+                    },  {
                         title: 'Grid 宫格',
                         path: '/componentDocs/mt-grid'
                     }, {
@@ -67,6 +64,25 @@ module.exports = {
                         title: 'Tag 标签',
                         path: '/componentDocs/mt-tag'
                     }
+                ]
+            },
+            {
+                title: '表单组件',
+                sidebarDepth: 1,
+                path: '/componentDocs/mt-form',
+                children: [
+                    {
+                        title: 'Text 文本',
+                        path: '/componentDocs/mt-form-text'
+                    },
+                    {
+                        title: 'Password 密码',
+                        path: '/componentDocs/mt-form-password'
+                    },
+                    {
+                        title: '时间选择器',
+                        path: '/componentDocs/simple-date'
+                    },
                 ]
             },
             {

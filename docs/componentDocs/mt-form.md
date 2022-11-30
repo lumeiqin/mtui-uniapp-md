@@ -1,60 +1,43 @@
-# Form
+# Form 表单
 ***
 #
 
 [//]: # (<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form"></iframe>)
 
-[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form)
+[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form/form)
 
 ```html
-<mt-form ref="mtForm" :formData="textFormData" 
-         @change="changeForm">
-</mt-form>
+<mt-form :formData="formData" ref="mtForm" @change="changeForm"></mt-form>
 
 <mt-button @click="formValid">校验表单</mt-button>
-
-
-<!-- text: textFormData -->
-
-<!-- password: passFormData -->
-
-<!-- number: numberFormData -->
-
-<!-- tel: telFormData -->
-
-<!-- ID: IDFormData -->
-
-<!-- textarea: textareaFormData -->
-
-<!-- click: clickFormData -->
-
-<!-- location: locationFormData -->
-
-<!-- code: codeFormData -->
-
-<!-- radio: radioFormData -->
-
-<!-- selector: selectorFormData -->
-
-<!-- multiSelector: multiSelectorFormData -->
-
-<!-- multiCustom: multiCustomFormData -->
-
-<!-- multiChoose: multiChooseFormData -->
-
-<!-- list: listFormData -->
-
-<!-- date: dateFormData -->
-
-<!-- file: fileFormData -->
 ```
 
 ```javascript
 export default {
     data() {
-        textFormData: {
+        formData: {
             field: {
                 text: "",
+                    pass: "",
+                    number: "",
+                    phone: "",
+                    card: "",
+                    opnion: "",
+                    opnion1: "",
+                    click: "",
+                    location: "",
+                    code: "",
+                    radio: "",
+                    selector: "",
+                    multiSelector: "",
+                    multiCustom: "",
+                    multiChoose: "",
+                    list: "",
+                    date: "",
+                    file: ["https://img.alicdn.com/bao/uploaded/i1/132953973/O1CN019EJExH1fDgALQaLt7_!!0-item_pic.jpg_200x200q90.jpg",
+                    "https://img.alicdn.com/bao/uploaded/i4/877198864/O1CN01W1apDl2FLlRM3PpzV_!!0-item_pic.jpg_200x200q90.jpg",
+                    "https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg3.mp4"
+                ],
             },
             property: [{
                 type: "text",
@@ -63,99 +46,41 @@ export default {
                 countText: true,
                 maxlength: 6,
                 validate: true
-            }]
-        },
-        passFormData: {
-            field: {
-                pass: "",
-            },
-            property: [{
+            }, {
                 type: "password",
                 text: "密码",
                 value: "pass",
                 validate: true
-            }]
-        },
-        numberFormData: {
-            field: {
-                number: "",
-            },
-            property: [{
+            }, {
                 type: "number",
                 text: "数值",
                 value: "number",
                 validate: true
-            }]
-        },
-        telFormData: {
-            field: {
-                phone: "",
-            },
-            property: [{
+            }, {
                 type: "tel",
                 text: "电话号码",
                 value: "phone",
                 validate: true
-            }]
-        },
-        IDFormData: {
-            field: {
-                card: "",
-            },
-            property: [{
+            }, {
                 type: "ID",
                 text: "身份证",
                 value: "card",
                 validate: true
-            }]
-        },
-        textareaFormData: {
-            field: {
-                opnion: "",
-                opnion1: "",
-            },
-            property: [{
+            }, {
                 type: "textarea",
                 text: "文本框",
                 value: "opnion",
                 validate: true
             }, {
-                type: "textarea",
-                text: "文本框-col",
-                styleType: 'col',
-                only: true,
-                value: "opnion1",
-                maxlength: 300,
-                countText: true,
-                validate: true
-            }]
-        },
-        clickFormData: {
-            field: {
-                click: "",
-            },
-            property: [{
                 type: "click",
                 text: "点击",
                 value: "click",
-            }]
-        },
-        locationFormData: {
-            field: {
-                location: "",
-            },
-            property: [{
+            }, {
                 type: "location",
                 text: "地址",
                 value: "location",
                 validate: true
-            }]
-        },
-        codeFormData: {
-            field: {
-                code: "",
-            },
-            property: [{
+            }, {
                 type: "code",
                 text: "验证码",
                 value: "code",
@@ -163,13 +88,7 @@ export default {
                 phoneNum: "",
                 second: 20,
                 validate: true
-            }]
-        },
-        radioFormData: {
-            field: {
-                radio: "",
-            },
-            property: [{
+            }, {
                 type: "radio",
                 getKey: "value",
                 showValue: {
@@ -186,13 +105,7 @@ export default {
                     title: '否',
                 }],
                 validate: true
-            }]
-        },
-        selectorFormData: {
-            field: {
-                selector: "",
-            },
-            property: [{
+            }, {
                 type: "selector",
                 showValue: {
                     value: "title",
@@ -202,13 +115,7 @@ export default {
                 text: "单选框",
                 value: "selector",
                 defaultPicker: [0]
-            }]
-        },
-        multiSelectorFormData: {
-            field: {
-                multiSelector: "",
-            },
-            property: [{
+            }, {
                 getKey: "key",
                 showValue: {
                     value: "value",
@@ -221,13 +128,7 @@ export default {
                 type: "multiSelector",
                 value: "multiSelector",
                 validate: true
-            }]
-        },
-        multiCustomFormData: {
-            field: {
-                text: "",
-            },
-            property: [{
+            }, {
                 getKey: "key",
                 showValue: {
                     value: "name",
@@ -238,51 +139,25 @@ export default {
                 type: "multiCustom",
                 value: "multiCustom",
                 validate: true
-            }]
-        },
-        multiChooseFormData: {
-            field: {
-                multiChoose: "",
-            },
-            property: [{
+            }, {
                 getKey: "value",
                 type: "multiChoose",
                 text: "多选",
                 value: "multiChoose",
                 dictionary: "chooseArr"
-            }]
-        },
-        listFormData: {
-            field: {
-                text: "",
-            },
-            property: [{
+            }, {
                 type: "list",
                 dictionary: "listArr",
                 text: "列表选择",
                 value: "list"
-            }]
-        },
-        dateFormData: {
-            field: {
-                date: "",
-            },
-            property: [{
+            }, {
                 type: "date",
                 field: "minute",
                 start: "2010/10/17 05:30",
                 end: "2030/07/15 09:10",
                 text: "时间",
                 value: "date"
-            }]
-        },
-        fileFormData: {
-            field: {
-                file: ["https://img.alicdn.com/bao/uploaded/i1/132953973/O1CN019EJExH1fDgALQaLt7_!!0-item_pic.jpg_200x200q90.jpg",
-                    "https://img.alicdn.com/bao/uploaded/i4/877198864/O1CN01W1apDl2FLlRM3PpzV_!!0-item_pic.jpg_200x200q90.jpg",
-                    "https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg3.mp4"],
-            },
-            property: [{
+            }, {
                 type: "file",
                 text: "附件上传",
                 videoQuality: "medium",
@@ -295,7 +170,7 @@ export default {
                 fileType: ['pic', 'video', 'audio'],
                 valueShow: []
             }]
-        },
+        }
     },
     methods: {
         formValid() {
