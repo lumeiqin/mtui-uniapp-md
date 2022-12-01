@@ -30,10 +30,10 @@ module.exports = {
                     }, {
                         title: 'Card 卡片',
                         path: '/componentDocs/mt-card'
-                    },{
+                    }, {
                         title: 'Collapse 折叠面板',
                         path: '/componentDocs/mt-collapse'
-                    },  {
+                    }, {
                         title: 'Grid 宫格',
                         path: '/componentDocs/mt-grid'
                     }, {
@@ -76,9 +76,39 @@ module.exports = {
                         path: '/componentDocs/mt-form-text'
                     },
                     {
+                        title: 'ID 身份证',
+                        path: '/componentDocs/mt-form-id'
+                    },
+                    {
+                        title: 'Tel 手机号',
+                        path: '/componentDocs/mt-form-tel'
+                    },
+                    {
+                        title: 'Number 数字',
+                        path: '/componentDocs/mt-form-number'
+                    },
+                    {
                         title: 'Password 密码',
                         path: '/componentDocs/mt-form-password'
                     },
+                    {
+                        title: 'Click 点击',
+                        path: '/componentDocs/mt-form-click'
+                    },
+                    {
+                        title: 'Location 地图',
+                        path: '/componentDocs/mt-form-location'
+                    },
+                    {
+                        title: 'Code 验证码',
+                        path: '/componentDocs/mt-form-code'
+                    },
+                    {
+                        title: 'Textarea 文本框',
+                        path: '/componentDocs/mt-form-textarea'
+                    },
+
+
                     {
                         title: '时间选择器',
                         path: '/componentDocs/simple-date'

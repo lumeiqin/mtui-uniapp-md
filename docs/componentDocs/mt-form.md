@@ -1,5 +1,7 @@
 # Form 表单
+
 ***
+
 #
 
 [//]: # (<iframe width='375px' height='667px' frameborder=0 allowfullscreen="true" src="https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form"></iframe>)
@@ -7,6 +9,7 @@
 [查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/form/form)
 
 ```html
+
 <mt-form :formData="formData" ref="mtForm" @change="changeForm"></mt-form>
 
 <mt-button @click="formValid">校验表单</mt-button>
@@ -15,9 +18,10 @@
 ```javascript
 export default {
     data() {
-        formData: {
-            field: {
-                text: "",
+        return {
+            formData: {
+                field: {
+                    text: "",
                     pass: "",
                     number: "",
                     phone: "",
@@ -35,141 +39,142 @@ export default {
                     list: "",
                     date: "",
                     file: ["https://img.alicdn.com/bao/uploaded/i1/132953973/O1CN019EJExH1fDgALQaLt7_!!0-item_pic.jpg_200x200q90.jpg",
-                    "https://img.alicdn.com/bao/uploaded/i4/877198864/O1CN01W1apDl2FLlRM3PpzV_!!0-item_pic.jpg_200x200q90.jpg",
-                    "https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg3.mp4"
-                ],
-            },
-            property: [{
-                type: "text",
-                text: "文本",
-                value: "text",
-                countText: true,
-                maxlength: 6,
-                validate: true
-            }, {
-                type: "password",
-                text: "密码",
-                value: "pass",
-                validate: true
-            }, {
-                type: "number",
-                text: "数值",
-                value: "number",
-                validate: true
-            }, {
-                type: "tel",
-                text: "电话号码",
-                value: "phone",
-                validate: true
-            }, {
-                type: "ID",
-                text: "身份证",
-                value: "card",
-                validate: true
-            }, {
-                type: "textarea",
-                text: "文本框",
-                value: "opnion",
-                validate: true
-            }, {
-                type: "click",
-                text: "点击",
-                value: "click",
-            }, {
-                type: "location",
-                text: "地址",
-                value: "location",
-                validate: true
-            }, {
-                type: "code",
-                text: "验证码",
-                value: "code",
-                phone: "phone",
-                phoneNum: "",
-                second: 20,
-                validate: true
-            }, {
-                type: "radio",
-                getKey: "value",
-                showValue: {
-                    value: "title"
+                        "https://img.alicdn.com/bao/uploaded/i4/877198864/O1CN01W1apDl2FLlRM3PpzV_!!0-item_pic.jpg_200x200q90.jpg",
+                        "https://klxxcdn.oss-cn-hangzhou.aliyuncs.com/histudy/hrm/media/bg3.mp4"
+                    ],
                 },
-                color: "#2194F2",
-                text: "是否必填",
-                value: "radio",
-                options: [{
-                    id: '0',
-                    title: '是',
+                property: [{
+                    type: "text",
+                    text: "文本",
+                    value: "text",
+                    countText: true,
+                    maxlength: 6,
+                    validate: true
                 }, {
-                    id: '1',
-                    title: '否',
-                }],
-                validate: true
-            }, {
-                type: "selector",
-                showValue: {
-                    value: "title",
-                    key: "id"
-                },
-                dictionary: "sys_common_nation",
-                text: "单选框",
-                value: "selector",
-                defaultPicker: [0]
-            }, {
-                getKey: "key",
-                showValue: {
-                    value: "value",
-                    key: "key"
-                },
-                defaultPicker: [0, 0, 0, 0, 0],
-                column: 3,
-                dictionary: "multiArr",
-                text: "多级联动",
-                type: "multiSelector",
-                value: "multiSelector",
-                validate: true
-            }, {
-                getKey: "key",
-                showValue: {
-                    value: "name",
-                    key: "id"
-                },
-                dictionary: "customArr",
-                text: "多级联动面板",
-                type: "multiCustom",
-                value: "multiCustom",
-                validate: true
-            }, {
-                getKey: "value",
-                type: "multiChoose",
-                text: "多选",
-                value: "multiChoose",
-                dictionary: "chooseArr"
-            }, {
-                type: "list",
-                dictionary: "listArr",
-                text: "列表选择",
-                value: "list"
-            }, {
-                type: "date",
-                field: "minute",
-                start: "2010/10/17 05:30",
-                end: "2030/07/15 09:10",
-                text: "时间",
-                value: "date"
-            }, {
-                type: "file",
-                text: "附件上传",
-                videoQuality: "medium",
-                picQuality: 50,
-                compress: true,
-                value: "file",
-                maxlength: 6,
-                validate: true,
-                tips: "支持上传图片、视频，附件总数不可超过6个，单个附件大小不得超过 100M",
-                fileType: ['pic', 'video', 'audio'],
-                valueShow: []
-            }]
+                    type: "password",
+                    text: "密码",
+                    value: "pass",
+                    validate: true
+                }, {
+                    type: "number",
+                    text: "数值",
+                    value: "number",
+                    validate: true
+                }, {
+                    type: "tel",
+                    text: "电话号码",
+                    value: "phone",
+                    validate: true
+                }, {
+                    type: "ID",
+                    text: "身份证",
+                    value: "card",
+                    validate: true
+                }, {
+                    type: "textarea",
+                    text: "文本框",
+                    value: "opnion",
+                    validate: true
+                }, {
+                    type: "click",
+                    text: "点击",
+                    value: "click",
+                }, {
+                    type: "location",
+                    text: "地址",
+                    value: "location",
+                    validate: true
+                }, {
+                    type: "code",
+                    text: "验证码",
+                    value: "code",
+                    phone: "phone",
+                    phoneNum: "",
+                    second: 20,
+                    validate: true
+                }, {
+                    type: "radio",
+                    getKey: "value",
+                    showValue: {
+                        value: "title"
+                    },
+                    color: "#2194F2",
+                    text: "是否必填",
+                    value: "radio",
+                    options: [{
+                        id: '0',
+                        title: '是',
+                    }, {
+                        id: '1',
+                        title: '否',
+                    }],
+                    validate: true
+                }, {
+                    type: "selector",
+                    showValue: {
+                        value: "title",
+                        key: "id"
+                    },
+                    dictionary: "sys_common_nation",
+                    text: "单选框",
+                    value: "selector",
+                    defaultPicker: [0]
+                }, {
+                    getKey: "key",
+                    showValue: {
+                        value: "value",
+                        key: "key"
+                    },
+                    defaultPicker: [0, 0, 0, 0, 0],
+                    column: 3,
+                    dictionary: "multiArr",
+                    text: "多级联动",
+                    type: "multiSelector",
+                    value: "multiSelector",
+                    validate: true
+                }, {
+                    getKey: "key",
+                    showValue: {
+                        value: "name",
+                        key: "id"
+                    },
+                    dictionary: "customArr",
+                    text: "多级联动面板",
+                    type: "multiCustom",
+                    value: "multiCustom",
+                    validate: true
+                }, {
+                    getKey: "value",
+                    type: "multiChoose",
+                    text: "多选",
+                    value: "multiChoose",
+                    dictionary: "chooseArr"
+                }, {
+                    type: "list",
+                    dictionary: "listArr",
+                    text: "列表选择",
+                    value: "list"
+                }, {
+                    type: "date",
+                    field: "minute",
+                    start: "2010/10/17 05:30",
+                    end: "2030/07/15 09:10",
+                    text: "时间",
+                    value: "date"
+                }, {
+                    type: "file",
+                    text: "附件上传",
+                    videoQuality: "medium",
+                    picQuality: 50,
+                    compress: true,
+                    value: "file",
+                    maxlength: 6,
+                    validate: true,
+                    tips: "支持上传图片、视频，附件总数不可超过6个，单个附件大小不得超过 100M",
+                    fileType: ['pic', 'video', 'audio'],
+                    valueShow: []
+                }]
+            }
         }
     },
     methods: {
@@ -256,13 +261,13 @@ export default {
 
 # Events
 
-| 事件       | 说明                                          | 回调参数                           |
-| ---------- | --------------------------------------------- |--------------------------------|
-| toCamera   | `type="ID"：点击扫描icon时触发 `                | `item: 当前对象`                   |
-| clickEvent | `type="click"：点击输入框时触发 `               | `item: 当前对象`                   |
-| toFillCode | `type="tel"：在 Input 值改变时触发(非开发使用)` | `value` `valueShow`            |
-| change     | 在表单中有参数变动时触发                      | `field`                          |
-| inputEvent | 在 Input 值改变时触发                         | `{[item.value]: item.valueShow}` |
+| 事件       | 说明                         | 回调参数          |
+| ---------- |----------------------------|---------------|
+| toCamera   | `type="ID"：点击扫描icon时触发 `   | `item: 当前对象`  |
+| clickEvent | `type="click"：点击输入框时触发 `   | `item: 当前对象`  |
+| codeEvent | `type="code"：点击获取验证码按钮后触发` | `item: 当前对象`  |
+| customSearch | `type="multiCustom"：搜索框输入时触发`      | `value：搜索框内容` |
+| change     | 在表单中有参数变动时触发               | `field`       |
 
 ### showValue 说明
 
