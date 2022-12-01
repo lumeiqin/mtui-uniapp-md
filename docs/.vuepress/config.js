@@ -111,11 +111,17 @@ module.exports = {
                         title: 'Radio 单选',
                         path: '/componentDocs/mt-form-radio'
                     },
-
-
                     {
-                        title: '时间选择器',
-                        path: '/componentDocs/simple-date'
+                        title: 'Selector 单选',
+                        path: '/componentDocs/mt-form-selector'
+                    },
+                    {
+                        title: 'MultiSelector 多级联动',
+                        path: '/componentDocs/mt-form-multiSelector'
+                    },
+                    {
+                        title: 'MultiCustom 联动面板',
+                        path: '/componentDocs/mt-form-multiCustom'
                     },
                 ]
             },
