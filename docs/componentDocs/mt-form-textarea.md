@@ -10,65 +10,51 @@
 
 ```html
 <!-- 自定义配置 -->
-<mt-form :formData="codeFormData" @codeEvent="getCodeFun"></mt-form>
+<mt-form :formData="textareaFormData"></mt-form>
 ```
 
 ```javascript
 export default {
-    data() {
-        return {
-            codeFormData: {
-                "field": {
-                    "tel": "",
-                    "code": ""
-                },
-                "property": [
-                    {
-                        "type": "tel",
-                        "validate": true,
-                        "text": "联系方式",
-                        "value": "tel",
-                        "placeholder": "请输入手机号码",
-                        "valueShow": ""
-                    },
-                    {
-                        "type": "code",
-                        "validate": true,
-                        "text": "验证码",
-                        "value": "code",
-                        "placeholder": "phone",
-                        "second": "20",
-                        "phone": "tel",
-                        "valueShow": ""
-                    }
-                ]
-            },
-            codeFormData1: {
-                "field": {
-                    "code1": ""
-                },
-                "property": [
-                    {
-                        "type": "code",
-                        "validate": true,
-                        "text": "验证码",
-                        "value": "code1",
-                        "placeholder": "phoneNum",
-                        "second": "30",
-                        "phoneNum": "15112345678"
-                    }
-                ]
-            }
-        }
-    },
-    methods: {
-        getCodeFun(item) {
-            uni.showToast({
-                title: "发送的手机号为：" + item.phoneNum,
-                icon: "none"
-            })
-        }
+  mixins: [common],
+  data() {
+    return {
+      textareaFormData: {
+        "field": {
+          "textarea": "",
+          "textarea1": "",
+          "textarea2": "详情内容颜色为灰色，可用于详情模式"
+        },
+        "property": [
+          {
+            "type": "textarea",
+            "validate": true,
+            "text": "意见",
+            "value": "textarea",
+            "placeholder": "请输入意见"
+          },
+          {
+            "type": "textarea",
+            "styleType": "col",
+            "countText": true,
+            "text": "意见",
+            "value": "textarea1",
+            "placeholder": "限制字数，并显示计数器",
+            "maxlength": "200",
+            "valueShow": ""
+          },
+          {
+            "type": "textarea",
+            "validate": true,
+            "detailshow": true,
+            "text": "意见",
+            "value": "textarea2",
+            "maxlength": "100",
+            "valueShow": "详情内容颜色为灰色，可用于详情模式"
+          }
+        ]
+      }
     }
+  }
 }
 ```
 		

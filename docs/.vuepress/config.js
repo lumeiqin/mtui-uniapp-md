@@ -107,6 +107,10 @@ module.exports = {
                         title: 'Textarea 文本框',
                         path: '/componentDocs/mt-form-textarea'
                     },
+                    {
+                        title: 'Radio 单选',
+                        path: '/componentDocs/mt-form-radio'
+                    },
 
 
                     {
