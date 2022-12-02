@@ -1,56 +1,71 @@
-# Popup
+# 日期选择器
 
 ***
 
 #
 
-[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/base/popup)
+[查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/popup/simpleDate)
 
 ```html
 <!-- 基础用法 -->
-<mt-popup ref="popup">
-    <view style="width: 100%;height: 200px;background: #fff;">
-        bottom
-    </view>
-</mt-popup>
-<mt-button @click="openModal('popup')">显示底部模态框</mt-button>
+<mt-button @click="openDate('normal')">基础用法</mt-button>
+
+<simple-date ref="normal" @submit="dateChange" @cancel="cancelEvent"></simple-date>
 
 
 
-<!-- type: center -->
-<mt-popup ref="popup1" type="center">
-    <view style="width: 100%;height: 200px;background: #fff;">
-        center
-    </view>
-</mt-popup>
-<mt-button @click="openModal('popup1')">显示中间模态框</mt-button>
 
+<!-- 限定期限内 选择日期 -->
+<mt-button @click="openDate('limit')">限定期限内 选择日期</mt-button>
 
-
-<!-- type: top -->
-<mt-popup ref="popup2" type="top">
-    <view style="width: 100%;height: 200px;background: #fff;">
-        center
-    </view>
-</mt-popup>
-<mt-button @click="openModal('popup2')">显示顶部模态框</mt-button>
+<simple-date ref="limit" 
+             :startDate="start" 
+             :endDate="end" 
+             field="day" 
+             
+             @submit="dateChange"
+             @cancel="cancelEvent"></simple-date>
 ```
 
 ```javascript
 export default {
+    data() {
+        return {
+            start: "2018/10/17",
+            end: "2024/07/15",
+        }
+    },
     methods: {
-        openModal(type) {
+        openDate(type) {
             this.$refs[type].open()
         },
+        dateChange(e) {
+            uni.showToast({
+                title: e.total,
+                icon: "none"
+            })
+        },
+        cancelEvent() {
+            uni.showToast({
+                title: "点击了取消按钮",
+                icon: "none"
+            })
+        }
     }
-} 
+}
 ```
 
 # Props
 
 | 参数        | 默认值 | 类型                 | 说明             | 可选值                     | 是否必填 |
 | ----------- | ------ |--------------------| ---------------- |-------------------------| -------- |
-| show        | false  | `Boolean` `String` | 模态框的显示隐藏 | -                       | false    |
-| type        | bottom | `String`           | 模态框的位置     | `top` `center` `bottom` | false    |
-| isMaskClick | true   | `Boolean` `String` | 是否点击蒙版关闭模态框 | -                       | false         |
+| startDate         | `1970-01-01 00:00:00`                           | `String`                  | 表示有效日期范围的开始，字符串格式为`YYYY-MM-DD hh:mm:ss`                                 | -                                             | false    |
+| endDate           | `2099-12-31 23:59:59`                           | `String`                  | 表示有效日期范围的结束，字符串格式为`YYYY-MM-DD hh:mm:ss`                                  | -                                             | false    |
+| field         | second                                        | `String`                  | 表示选择器的粒度                                                                 | `year` `month` `day` `hour` `minute` `second` | false    |
 
+# Events
+
+| 事件       | 说明        | 回调参数 |
+| ---------- |-----------|------|
+| submit   | 点击确定按钮时触发 | `{day:"02",hour:"14",minute:"41",month:"12",second:"43",total:"2022-12-02 14:41:43",year:"2022"}`   |
+| cancel   | 点击取消按钮时触发 | -    |

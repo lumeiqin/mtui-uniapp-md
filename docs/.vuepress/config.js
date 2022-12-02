@@ -146,6 +146,26 @@ module.exports = {
                     {
                         title: 'Modal 模态框',
                         path: '/componentDocs/popup/mt-modal'
+                    },
+                    {
+                        title: '选择器',
+                        path: '/componentDocs/popup/simple-selector'
+                    },
+                    {
+                        title: '多级联动选择器',
+                        path: '/componentDocs/popup/simple-multi-selector'
+                    },
+                    {
+                        title: '联动面板选择',
+                        path: '/componentDocs/popup/simple-multi-custom'
+                    },
+                    {
+                        title: '多选选择器',
+                        path: '/componentDocs/popup/simple-multi-choose'
+                    },
+                    {
+                        title: '日期选择器',
+                        path: '/componentDocs/popup/simple-date'
                     }
                 ]
             },
