@@ -18,148 +18,168 @@ module.exports = {
                 path: '/'
             },
             {
-                title: '基础组件',   // 必要的
+                title: '基础',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     {
                         title: 'Box 容器',
-                        path: '/componentDocs/mt-box'
+                        path: '/componentDocs/base/mt-box'
                     }, {
                         title: 'Button 按钮',
-                        path: '/componentDocs/mt-button'
+                        path: '/componentDocs/base/mt-button'
                     }, {
                         title: 'Card 卡片',
-                        path: '/componentDocs/mt-card'
+                        path: '/componentDocs/base/mt-card'
                     }, {
                         title: 'Collapse 折叠面板',
-                        path: '/componentDocs/mt-collapse'
+                        path: '/componentDocs/base/mt-collapse'
                     }, {
                         title: 'Grid 宫格',
-                        path: '/componentDocs/mt-grid'
-                    }, {
-                        title: 'Modal 模态框',
-                        path: '/componentDocs/mt-modal'
+                        path: '/componentDocs/base/mt-grid'
                     }, {
                         title: 'Navbar 导航栏',
-                        path: '/componentDocs/mt-navbar'
-                    }, {
-                        title: 'Popup 弹窗',
-                        path: '/componentDocs/mt-popup'
+                        path: '/componentDocs/base/mt-navbar'
                     }, {
                         title: 'Rate 评分',
-                        path: '/componentDocs/mt-rate'
+                        path: '/componentDocs/base/mt-rate'
                     }, {
                         title: 'Search 搜索框',
-                        path: '/componentDocs/mt-search'
+                        path: '/componentDocs/base/mt-search'
                     }, {
                         title: 'Step 流程图',
-                        path: '/componentDocs/mt-step'
+                        path: '/componentDocs/base/mt-step'
                     }, {
                         title: 'Tabbar 标签栏',
-                        path: '/componentDocs/mt-tabbar'
+                        path: '/componentDocs/base/mt-tabbar'
                     }, {
                         title: 'Tabs 标签页',
-                        path: '/componentDocs/mt-tabs'
+                        path: '/componentDocs/base/mt-tabs'
                     }, {
                         title: 'Tag 标签',
-                        path: '/componentDocs/mt-tag'
+                        path: '/componentDocs/base/mt-tag'
                     }
                 ]
             },
             {
-                title: '表单组件',
+                title: '表单',
                 sidebarDepth: 1,
-                path: '/componentDocs/mt-form',
+                path: '/componentDocs/form/mt-form',
                 children: [
                     {
                         title: 'Text 文本',
-                        path: '/componentDocs/mt-form-text'
+                        path: '/componentDocs/form/mt-form-text'
                     },
                     {
                         title: 'ID 身份证',
-                        path: '/componentDocs/mt-form-id'
+                        path: '/componentDocs/form/mt-form-id'
                     },
                     {
                         title: 'Tel 手机号',
-                        path: '/componentDocs/mt-form-tel'
+                        path: '/componentDocs/form/mt-form-tel'
                     },
                     {
                         title: 'Number 数字',
-                        path: '/componentDocs/mt-form-number'
+                        path: '/componentDocs/form/mt-form-number'
                     },
                     {
                         title: 'Password 密码',
-                        path: '/componentDocs/mt-form-password'
+                        path: '/componentDocs/form/mt-form-password'
                     },
                     {
                         title: 'Click 点击',
-                        path: '/componentDocs/mt-form-click'
+                        path: '/componentDocs/form/mt-form-click'
                     },
                     {
                         title: 'Location 地图',
-                        path: '/componentDocs/mt-form-location'
+                        path: '/componentDocs/form/mt-form-location'
                     },
                     {
                         title: 'Code 验证码',
-                        path: '/componentDocs/mt-form-code'
+                        path: '/componentDocs/form/mt-form-code'
                     },
                     {
                         title: 'Textarea 文本框',
-                        path: '/componentDocs/mt-form-textarea'
+                        path: '/componentDocs/form/mt-form-textarea'
                     },
                     {
                         title: 'Radio 单选',
-                        path: '/componentDocs/mt-form-radio'
+                        path: '/componentDocs/form/mt-form-radio'
                     },
                     {
                         title: 'Selector 单选',
-                        path: '/componentDocs/mt-form-selector'
+                        path: '/componentDocs/form/mt-form-selector'
                     },
                     {
                         title: 'MultiSelector 多级联动',
-                        path: '/componentDocs/mt-form-multiSelector'
+                        path: '/componentDocs/form/mt-form-multiSelector'
                     },
                     {
                         title: 'MultiCustom 联动面板',
-                        path: '/componentDocs/mt-form-multiCustom'
+                        path: '/componentDocs/form/mt-form-multiCustom'
+                    },
+                    {
+                        title: 'MultiChoose 多选',
+                        path: '/componentDocs/form/mt-form-multiChoose'
+                    },
+                    {
+                        title: 'List 列表',
+                        path: '/componentDocs/form/mt-form-list'
+                    },
+                    {
+                        title: 'Date 日期',
+                        path: '/componentDocs/form/mt-form-date'
+                    },
+                    {
+                        title: 'File 附件上传',
+                        path: '/componentDocs/form/mt-form-file'
                     },
                 ]
             },
             {
-                title: 'Utils 配置',
+                title: '弹出层',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [
                     {
-                        title: 'Utils 引入',
-                        path: '/componentDocs/mt-utils'
+                        title: 'Popup 弹窗',
+                        path: '/componentDocs/popup/mt-popup'
                     },
                     {
+                        title: 'Modal 模态框',
+                        path: '/componentDocs/popup/mt-modal'
+                    }
+                ]
+            },
+            {
+                title: 'Utils 配置',
+                path: '/componentDocs/utils/mt-utils',
+                children: [
+                    {
                         title: 'Get 请求',
-                        path: '/componentDocs/mt-utils-get'
+                        path: '/componentDocs/utils/mt-utils-get'
                     },
                     {
                         title: 'Post 请求',
-                        path: '/componentDocs/mt-utils-post'
+                        path: '/componentDocs/utils/mt-utils-post'
                     },
                     {
                         title: 'File 请求',
-                        path: '/componentDocs/mt-utils-file'
+                        path: '/componentDocs/utils/mt-utils-file'
                     },
                     {
                         title: '水印背景',
-                        path: '/componentDocs/mt-utils-waterMark'
+                        path: '/componentDocs/utils/mt-utils-waterMark'
                     },
                     {
                         title: '时间格式化',
-                        path: '/componentDocs/mt-utils-formatDate'
+                        path: '/componentDocs/utils/mt-utils-formatDate'
                     },
                     {
                         title: '附件地址完善',
-                        path: '/componentDocs/mt-utils-prefixUrl'
+                        path: '/componentDocs/utils/mt-utils-prefixUrl'
                     },
                     {
                         title: 'isEmpty 判空',
-                        path: '/componentDocs/mt-utils-isEmpty'
+                        path: '/componentDocs/utils/mt-utils-isEmpty'
                     },
                 ]
             },
