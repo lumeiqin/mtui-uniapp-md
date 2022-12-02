@@ -67,17 +67,17 @@ export default {
 
 ### config 说明
 
-| 参数           | 默认值            | 类型    | 说明              | 可选值 |
-| -------------- | ----------------- | ------- | ----------------- | ------ |
+| 参数           | 默认值                 | 类型    | 说明              | 可选值 |
+| -------------- |---------------------| ------- | ----------------- | ------ |
 | border         | `1px solid #e4e4e4` | `String`  | tab的下边框       | -      |
 | color          | `#333`              | `String`  | tab未选中字体颜色 | -      |
 | selectedColor  | `#2194F2`           | `String`  | tab已选中字体颜色 |        |
-| fontsize       | 15px              | `String`  | 未选中字体大小    | -      |
-| selectedSize   | 15px              | `String`  | 已选中字体大小    | -      |
-| underline      | true              | `Boolean` | 是否显示下划线    | -      |
-| selectedWeight | 600               | `Number`  | 已选中字体粗细    | -      |
+| fontsize       | 30rpx               | `String`  | 未选中字体大小    | -      |
+| selectedSize   | 30rpx               | `String`  | 已选中字体大小    | -      |
+| underline      | true                | `Boolean` | 是否显示下划线    | -      |
+| selectedWeight | 600                 | `Number`  | 已选中字体粗细    | -      |
 | bg     | `#fff`              | `String`  | tab背景色         | -      |
-| height         | 45px              | `String`  | tab的高度         | -       |
+| height         | 90rpx               | `String`  | tab的高度         | -       |
 
 # Events
 
