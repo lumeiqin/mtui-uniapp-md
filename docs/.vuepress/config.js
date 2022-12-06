@@ -37,8 +37,14 @@ module.exports = {
                         title: 'Grid 宫格',
                         path: '/componentDocs/base/mt-grid'
                     }, {
+                        title: 'Keyboard 键盘',
+                        path: '/componentDocs/base/mt-keyboard'
+                    }, {
                         title: 'Navbar 导航栏',
                         path: '/componentDocs/base/mt-navbar'
+                    },{
+                        title: 'Pagination 分页',
+                        path: '/componentDocs/base/mt-pagination'
                     }, {
                         title: 'Rate 评分',
                         path: '/componentDocs/base/mt-rate'

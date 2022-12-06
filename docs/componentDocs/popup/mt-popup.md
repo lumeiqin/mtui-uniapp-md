@@ -52,5 +52,6 @@ export default {
 | ----------- | ------ |--------------------| ---------------- |-------------------------| -------- |
 | show        | false  | `Boolean` `String` | 模态框的显示隐藏 | -                       | false    |
 | type        | bottom | `String`           | 模态框的位置     | `top` `center` `bottom` | false    |
+|showMask| true | `Boolean` `String` | 是否显示蒙版 | - | false|
 | isMaskClick | true   | `Boolean` `String` | 是否点击蒙版关闭模态框 | -                       | false         |
 

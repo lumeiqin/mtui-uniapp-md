@@ -76,10 +76,11 @@ export default {
 
 # Events
 
-| 事件       | 说明                           | 回调参数 |
-| ---------- | ------------------------------ | -------- |
-| focusEvent | 获取焦点时触发                 | `value`    |
-| blurEvent  | 失去焦点时触发                 | `value`    |
-| inputEvent | 输入时触发，点击清除按钮时触发 | `value`         |
+| 事件         | 说明                        | 回调参数 |
+|------------|---------------------------| -------- |
+| focusEvent | 获取焦点时触发                   | `value`    |
+| blurEvent  | 失去焦点时触发                   | `value`    |
+| inputEvent | 输入时触发，点击清除按钮时触发           | `value`         |
+| click      | 禁用输入框时，点击输入框时触发 | `value`         |
 
 
