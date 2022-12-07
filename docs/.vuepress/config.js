@@ -55,6 +55,9 @@ module.exports = {
                         title: 'Step 流程图',
                         path: '/componentDocs/base/mt-step'
                     }, {
+                        title: 'Swiper 轮播图',
+                        path: '/componentDocs/base/mt-swiper'
+                    }, {
                         title: 'Tabbar 标签栏',
                         path: '/componentDocs/base/mt-tabbar'
                     }, {
