@@ -8,7 +8,7 @@
 
 ```html
 <!-- 基础用法 -->
-<mt-swiper ref="mySwiper" :config="swiperConfig">
+<mt-swiper ref="mySwiper">
     <mt-swiper-item>
         <div class="item-content item1">SwiperItem - 0</div>
     </mt-swiper-item>
@@ -22,9 +22,9 @@
 
 
 <!-- 图片轮播 -->
-<mt-swiper ref="mtSwiper" :urlList="imgList" :slip="false" :config="swiperConfig"/>
+<mt-swiper ref="mtSwiper" :urlList="imgList" :slip="false"/>
 <view class="btnArr">
-    <mt-button @click="preClick" style="margin-right: 50px">上一页</mt-button>
+    <mt-button @click="preClick" style="margin-right: 60px">上一页</mt-button>
     <mt-button @click="nextClick">下一页</mt-button>
 </view>
 ```
@@ -33,10 +33,6 @@
 export default {
     data() {
         return {
-            swiperConfig: {
-                width: 300,
-                height: 200
-            },
             imgList: [
                 'https://ts2.cn.mm.bing.net/th?id=OIP-C.xc5KsKdO2u9T5hBCpE0yCgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2',
                 'https://tse4-mm.cn.bing.net/th/id/OIP-C.yTaV7x7n9LXjYN440YsIhQHaFj?w=196&h=147&c=7&r=0&o=5&dpr=2&pid=1.7',
@@ -74,7 +70,6 @@ export default {
 }
 
 .btnArr {
-    width: 320px;
     display: flex;
     justify-content: space-around;
     padding: 20px 10px;
