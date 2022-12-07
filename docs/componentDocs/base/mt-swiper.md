@@ -91,14 +91,7 @@ export default {
 | duration | 350    | `Number`  | 自动滚动到稳定位置所需的时间，`单位：秒(ms)`                                   | -       |false |
 | showDot | true   | `Boolean` | 是否显示索引点                                                     | -       |false |
 | slip | true   | `Boolean` | 轮播图是否可以滑动                                                   | -       |false |
-| config | `{}`     | `Object`          | 自定义参数                                                       | -       |false |
-
-### config 说明
-
-| 参数     | 默认值  | 类型       | 说明            | 可选值 |
-| -------- |------|----------|---------------|-----|
-| width   | 设备宽度 | `String` | 盒子的宽度，`单位：px` | -   |
-| height  | 200  | `Number` | 盒子的高度，`单位：px` | -   |
+| height | 400rpx | `String`          | 轮播图高度                                                       | -       |false |
 
 # Slots
 
