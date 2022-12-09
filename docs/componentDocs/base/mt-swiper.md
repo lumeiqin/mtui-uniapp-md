@@ -2,13 +2,13 @@
 
 ***
 
-#          
+#            
 
 [查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/base/swiper)
 
 ```html
 <!-- 基础用法 -->
-<mt-swiper ref="mySwiper">
+<mt-swiper ref="swiper1">
     <mt-swiper-item>
         <div class="item-content item1">SwiperItem - 0</div>
     </mt-swiper-item>
@@ -21,12 +21,22 @@
 </mt-swiper>
 
 
+
 <!-- 图片轮播 -->
-<mt-swiper ref="mtSwiper" :urlList="imgList" :slip="false"/>
+<mt-swiper ref="swiper2" :urlList="imgList" :slip="false"/>
 <view class="btnArr">
     <mt-button @click="preClick" style="margin-right: 60px">上一页</mt-button>
     <mt-button @click="nextClick">下一页</mt-button>
 </view>
+
+
+
+<!-- 数据请求 -->
+<mt-swiper ref="swiper3" :loading="loading" @change="changeSwiper">
+    <mt-swiper-item v-for="(item, index) in dataList" :key="index">
+        <img :src="item" alt="">
+    </mt-swiper-item>
+</mt-swiper>
 ```
 
 ```javascript
@@ -37,15 +47,39 @@ export default {
                 'https://ts2.cn.mm.bing.net/th?id=OIP-C.xc5KsKdO2u9T5hBCpE0yCgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2',
                 'https://tse4-mm.cn.bing.net/th/id/OIP-C.yTaV7x7n9LXjYN440YsIhQHaFj?w=196&h=147&c=7&r=0&o=5&dpr=2&pid=1.7',
                 'https://ts1.cn.mm.bing.net/th?id=OIP-C.pAIGQZalV1QJV7n7fupiCwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2'
-            ]
+            ],
+            dataList: [],
+            loading: false,
         }
     },
+    created() {
+        this.getData()
+    },
     methods: {
+        getData() {
+            setTimeout(() => {
+                this.dataList = this.imgList
+                this.loading = true
+            }, 2000)
+        },
+        changeSwiper(index) {
+            uni.showToast({
+                title: "当前的项：" + index,
+                icon: "none"
+            })
+        },
         preClick() {
-            this.$refs.mtSwiper.previous()
+            let _this = this
+            _this.$nextTick(() => {
+                _this.$refs.swiper1.previous()
+                _this.$refs.swiper2.previous()
+                _this.$refs.swiper3.previous()
+            })
         },
         nextClick() {
-            this.$refs.mtSwiper.next()
+            this.$refs.swiper1.next()
+            this.$refs.swiper2.next()
+            this.$refs.swiper3.next()
         }
     }
 }
@@ -69,6 +103,12 @@ export default {
     background: #9999CC;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 .btnArr {
     display: flex;
     justify-content: space-around;
@@ -78,15 +118,16 @@ export default {
 
 # Props
 
-| 参数   | 默认值    | 类型        | 说明                                                          | 可选值 | 是否必要 |
-| ------ |--------|-----------|-------------------------------------------------------------| ------ |------ |
+| 参数   | 默认值    | 类型        | 说明                                                          | 可选值 | 是否必要  |
+| ------ |--------|-----------|-------------------------------------------------------------| ------ |-------|
 | urlList   | false  | `Array`   | 图片列表                                                        | -      | false |
-| startIndex | 0      | `Number`  | 起始索引                                                        | -      |false |
-| autoPlayDelay | `null` | `Number`  | `>= 0：则将会将此值当做 delay的时间(单位为 ms)进行自动轮播；` `<0 或 null: 则不自动轮播` | 一般建议设置为 3000      |false |
-| duration | 350    | `Number`  | 自动滚动到稳定位置所需的时间，`单位：秒(ms)`                                   | -       |false |
-| showDot | true   | `Boolean` | 是否显示索引点                                                     | -       |false |
-| slip | true   | `Boolean` | 轮播图是否可以滑动                                                   | -       |false |
-| height | 400rpx | `String`          | 轮播图高度                                                       | -       |false |
+| startIndex | 0      | `Number`  | 起始索引                                                        | -      | false |
+| autoPlayDelay | `null` | `Number`  | `>= 0：则将会将此值当做 delay的时间(单位为 ms)进行自动轮播；` `<0 或 null: 则不自动轮播` | 一般建议设置为 3000      | false |
+| duration | 350    | `Number`  | 自动滚动到稳定位置所需的时间，`单位：秒(ms)`                                   | -       | false |
+| showDot | true   | `Boolean` | 是否显示索引点                                                     | -       | false |
+| slip | true   | `Boolean` | 轮播图是否可以滑动                                                   | -       | false |
+| height | 400rpx | `String`  | 轮播图高度                                                       | -       | false |
+| loading | true   | `Boolean` | 接口获取数据填充时的过渡状态 `true：加载完成` `false：加载中`                      | -       | true  |
 
 # Slots
 
