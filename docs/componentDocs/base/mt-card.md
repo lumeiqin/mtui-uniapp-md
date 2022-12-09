@@ -44,7 +44,7 @@
 <!-- 显示右侧标签 + 多按钮 -->
 <mt-card :title="title" :notes="noteArr" :btnGroup="moreButtonArr" badgeText="2"
 
-         @btnEvent="btnEvent">
+         @btnClick="btnEvent">
 </mt-card>
 
 
@@ -227,6 +227,6 @@ export default {
 | click        | 列表点击时触发       | `普通点击：- ` `link跳转：res, err` |
 | switchChange | switch值改变时触发   | `value`                     |
 | checkChange    | checkbox值改变时触发 | `value`                     |
-| btnEvent     | 按钮点击时触发       | `{ btn: item }`             |
+| btnClick     | 按钮点击时触发       | `{ btn: item }`             |
 
 		

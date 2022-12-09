@@ -6,7 +6,7 @@
 
 ```html
 <!-- 基础用法 -->
-<mt-search @focusEvent="focusEvent" @blurEvent="blurEvent" @inputEvent="inputEvent"></mt-search>
+<mt-search @focus="focusEvent" @blur="blurEvent" @input="inputEvent"></mt-search>
 
 
 <!-- 自定义参数 -->
@@ -78,9 +78,9 @@ export default {
 
 | 事件         | 说明                        | 回调参数 |
 |------------|---------------------------| -------- |
-| focusEvent | 获取焦点时触发                   | `value`    |
-| blurEvent  | 失去焦点时触发                   | `value`    |
-| inputEvent | 输入时触发，点击清除按钮时触发           | `value`         |
+| focus | 获取焦点时触发                   | `value`    |
+| blur  | 失去焦点时触发                   | `value`    |
+| input | 输入时触发，点击清除按钮时触发           | `value`         |
 | click      | 禁用输入框时，点击输入框时触发 | `value`         |
 
 

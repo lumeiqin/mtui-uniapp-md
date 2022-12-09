@@ -81,6 +81,6 @@ export default {
 
 | 事件     | 说明        | 回调参数                            |
 | -------- | ----------- |---------------------------------|
-| tabClick | 点击tab触发 | `item：当前tab相关` `index：当前tab的索引` |
+| click | 点击tab触发 | `item：当前tab相关` `index：当前tab的索引` |
 
 
