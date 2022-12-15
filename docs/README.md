@@ -7,7 +7,7 @@
 ***
 
 #
-### 方式一 ：通过 npm 安装
+### 方式一 ：通过 npm 安装（只适用h5）
 
 #### 使通过 npm 安装，需要先通过 vue-cli 创建 uni-app 项目，[详见](https://uniapp.dcloud.io/quickstart-cli)
 
@@ -21,11 +21,12 @@ import Vue from 'vue'
 
 import mtui from "mtui-uni";
 Vue.use(mtui);
-```
+``` 
 
 ```scss
-//在 App.vue 中引入字体图标
-@import "mtui-uni/src/static/font/iconfont.css";
+<style lang="scss">
+@import "mtui-uni/src/components/mt-theme/iconfont/iconfont.css";
+</style>
 ```
 
 ```scss
@@ -34,7 +35,7 @@ Vue.use(mtui);
 ```
 
 #
-### 方式二 ：通过下载代码
+### 方式二 ：通过下载代码（适用h5，app）
 
 #### 通过 GitHub 下载组件，将 `src/components/` `/static` 目录拷贝到自己的项目中。
 
@@ -43,8 +44,9 @@ git clone https://github.com/lacey-lmq/mtui-uniapp.git
 ```
 
 ```scss
-//在 App.vue 中引入字体图标
-@import "./static/font/iconfont.css";
+<style lang="scss">
+@import "./components/mt-theme/iconfont/iconfont.css";
+</style>
 ```
 
 ```scss
@@ -60,12 +62,14 @@ git clone https://github.com/lacey-lmq/mtui-uniapp.git
 git clone https://github.com/lacey-lmq/mtui-uniapp.git
 ```
 
+##### 在 `src/components/mt-theme` 目录下找到需要的组件样式拷贝到项目中。
+
 ```scss
-//在 App.vue 中引入字体图标
-@import "./static/font/iconfont.css";
+<style lang="scss">
+@import "./components/mt-theme/iconfont/iconfont.css";
+</style>
 ```
 
-##### 在 `src/components/mt-theme` 目录下找到需要的组件样式拷贝到项目中。
 ```scss
 //在 uni.scss 中引入组件样式
 @import "./components/mt-theme/mt-box.scss";

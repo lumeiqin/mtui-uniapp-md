@@ -10,7 +10,7 @@
 <!-- 基础用法 -->
 <mt-button @click="openDate('normal')">基础用法</mt-button>
 
-<simple-date ref="normal" @submit="dateChange" @cancel="cancelEvent"></simple-date>
+<simpleDate ref="normal" @submit="dateChange" @cancel="cancelEvent"></simpleDate>
 
 
 
@@ -18,13 +18,24 @@
 <!-- 限定期限内 选择日期 -->
 <mt-button @click="openDate('limit')">限定期限内 选择日期</mt-button>
 
-<simple-date ref="limit" 
+<simpleDate ref="limit" 
              :startDate="start" 
              :endDate="end" 
              field="day" 
              
              @submit="dateChange"
-             @cancel="cancelEvent"></simple-date>
+             @cancel="cancelEvent"></simpleDate>
+```
+
+```javascript
+// 除第一种引入方式，其他引入方式需要手动引入此组件
+import simpleDate from "../../components/mt-form/item-date/simple-date.vue";
+
+export default {
+    components: {
+        simpleDate
+    }
+}
 ```
 
 ```javascript

@@ -20,6 +20,17 @@
 ```
 
 ```javascript
+// 除第一种引入方式，其他引入方式需要手动引入此组件
+import simpleMultiChoose from "../../components/mt-form/item-multiChoose/simple-multi-choose.vue";
+
+export default {
+    components: {
+        simpleMultiChoose
+    }
+}
+```
+
+```javascript
 export default {
     data() {
         return {

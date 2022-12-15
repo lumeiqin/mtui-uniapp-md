@@ -20,6 +20,17 @@
 ```
 
 ```javascript
+// 除第一种引入方式，其他引入方式需要手动引入此组件
+import simpleSelector from "../../components/mt-form/item-selector/simple-selector.vue"
+
+export default {
+    components: {
+        simpleSelector
+    }
+}
+```
+
+```javascript
 export default {
     data() {
         return {

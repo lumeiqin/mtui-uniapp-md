@@ -8,7 +8,7 @@
 
 ```html
 <!-- 基础用法 -->
-<mt-button @click="openSelector('normal')"></mt-button>
+<mt-button @click="openSelector('normal')">基础使用</mt-button>
 
 <simpleMultiCustom ref="normal"
                    :search="false"
@@ -18,7 +18,6 @@
 
                    @submit="submitEvent"
                    @cancel="cancelEvent"></simpleMultiCustom>
-
 
 
 <!-- 显示搜索框 -->
@@ -33,7 +32,6 @@
                    @submit="submitEvent"
                    @cancel="cancelEvent"
                    @customSearch="searchEvent"></simpleMultiCustom>
-
 
 
 <!-- 当输入关键字后 内容自定义 -->
@@ -51,6 +49,17 @@
 
     我是自定义内容
 </simpleMultiCustom>
+```
+
+```javascript
+// 除第一种引入方式，其他引入方式需要手动引入此组件
+import simpleMultiCustom from "../../components/mt-form/item-multiCustom/simple-multi-custom.vue";
+
+export default {
+    components: {
+        simpleMultiCustom
+    }
+}
 ```
 
 ```javascript

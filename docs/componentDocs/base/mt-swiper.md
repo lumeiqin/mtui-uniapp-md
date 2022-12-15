@@ -2,7 +2,7 @@
 
 ***
 
-#            
+#             
 
 [查看案例](https://static-363fc8f1-c547-4a87-8d04-6d5ba4035deb.bspapp.com/#/pages/base/swiper)
 
@@ -21,14 +21,12 @@
 </mt-swiper>
 
 
-
 <!-- 图片轮播 -->
-<mt-swiper ref="swiper2" :urlList="imgList" :slip="false"/>
+<mt-swiper ref="swiper2" :urlList="imgList"/>
 <view class="btnArr">
     <mt-button @click="preClick" style="margin-right: 60px">上一页</mt-button>
     <mt-button @click="nextClick">下一页</mt-button>
 </view>
-
 
 
 <!-- 数据请求 -->
@@ -122,10 +120,7 @@ img {
 | ------ |--------|-----------|-------------------------------------------------------------| ------ |-------|
 | urlList   | false  | `Array`   | 图片列表                                                        | -      | false |
 | startIndex | 0      | `Number`  | 起始索引                                                        | -      | false |
-| autoPlayDelay | `null` | `Number`  | `>= 0：则将会将此值当做 delay的时间(单位为 ms)进行自动轮播；` `<0 或 null: 则不自动轮播` | 一般建议设置为 3000      | false |
-| duration | 350    | `Number`  | 自动滚动到稳定位置所需的时间，`单位：秒(ms)`                                   | -       | false |
 | showDot | true   | `Boolean` | 是否显示索引点                                                     | -       | false |
-| slip | true   | `Boolean` | 轮播图是否可以滑动                                                   | -       | false |
 | height | 400rpx | `String`  | 轮播图高度                                                       | -       | false |
 | loading | true   | `Boolean` | 接口获取数据填充时的过渡状态 `true：加载完成` `false：加载中`                      | -       | true  |
 
