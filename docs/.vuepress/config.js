@@ -175,6 +175,10 @@ module.exports = {
                     {
                         title: '日期选择器',
                         path: '/componentDocs/popup/simple-date'
+                    },
+                    {
+                        title: '列表选择器',
+                        path: '/componentDocs/popup/simple-list'
                     }
                 ]
             },
