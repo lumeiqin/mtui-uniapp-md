@@ -39,17 +39,20 @@ export default {
 
 # Props
 
-| 参数   | 默认值  | 类型                | 说明      | 可选值 | 是否必要  |
-| ------ |------|-------------------|---------| ------ |-------|
-| totalPage   | 10   | `Number`  | 总页数     | -      | true  |
-| showEll | true | `Boolean` | 是否显示省略号 | -      | false |
-| config | `{}` | `Object`          | 自定义参数   | -       | false |
+| 参数        | 默认值    | 类型        | 说明      | 可选值               | 是否必要  |
+|-----------|--------|-----------|---------|-------------------|-------|
+| totalPage | 10     | `Number`  | 总页数     | -                 | true  |
+| type      | normal | `String`  | 分页类型    | `normal` `simple` | false |
+| showEll   | true   | `Boolean` | 是否显示省略号 | -                 | false |
+| config    | `{}`   | `Object`  | 自定义参数   | -                 | false |
 
 ### config 说明
 
 | 参数     | 默认值 | 类型   | 说明 | 可选值 |
 | -------- | ------ | ------ |--|-----|
 | color    | `#2194F2`   | `String` | 主题色 | -   |
+| radius    | 30rpx   | `String` | 按钮圆角，参考`border-radius` | -   |
+| numRadius    | 50%   | `String` | 数字按钮圆角，参考`border-radius` | -   |
 
 
 # Events
