@@ -19,7 +19,7 @@ module.exports = {
             },
             {
                 title: '更新日志',
-                path: '/RECORD'
+                path: '/record'
             },
             {
                 title: '基础',   // 必要的
@@ -43,6 +43,9 @@ module.exports = {
                     }, {
                         title: 'Keyboard 键盘',
                         path: '/componentDocs/base/mt-keyboard'
+                    },{
+                        title: 'Loading 加载',
+                        path: '/componentDocs/base/mt-loading'
                     }, {
                         title: 'Navbar 导航栏',
                         path: '/componentDocs/base/mt-navbar'
