@@ -18,6 +18,10 @@ module.exports = {
                 path: '/'
             },
             {
+                title: '更新日志',
+                path: '/RECORD'
+            },
+            {
                 title: '基础',   // 必要的
                 sidebarDepth: 1,    // 可选的, 默认值是 1
                 children: [

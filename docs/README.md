@@ -1,10 +1,8 @@
 # mtui-uniapp 组件库
-
-#### 初始化阶段，不定期更新组件  :tada: :tada:
-
+*** 
+##### 本人只用uniapp做过`h5`和`安卓app`，并不一定支持其他平台（慎用），期盼对您能有所帮助 :innocent: :innocent:
 *** 
 #### 在使用 MtUI UNI版 前，请确保你已经学习并熟练使用过 [uni-app](https://uniapp.dcloud.io/) 。
-***
 
 #
 ### 方式一 ：通过 npm 安装（只适用h5）
