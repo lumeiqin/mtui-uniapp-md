@@ -22,6 +22,7 @@ Vue.use(mtui);
 ``` 
 
 ```scss
+//在 App.vue 中引入字体图标
 <style lang="scss">
 @import "mtui-uni/src/components/mt-theme/iconfont/iconfont.css";
 </style>
@@ -42,6 +43,7 @@ git clone https://github.com/lacey-lmq/mtui-uniapp.git
 ```
 
 ```scss
+//在 App.vue 中引入字体图标
 <style lang="scss">
 @import "./components/mt-theme/iconfont/iconfont.css";
 </style>
@@ -63,6 +65,7 @@ git clone https://github.com/lacey-lmq/mtui-uniapp.git
 ##### 在 `src/components/mt-theme` 目录下找到需要的组件样式拷贝到项目中。
 
 ```scss
+//在 App.vue 中引入字体图标
 <style lang="scss">
 @import "./components/mt-theme/iconfont/iconfont.css";
 </style>

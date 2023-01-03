@@ -210,16 +210,24 @@ module.exports = {
                         path: '/componentDocs/utils/mt-utils-waterMark'
                     },
                     {
+                        title: 'isEmpty 判空',
+                        path: '/componentDocs/utils/mt-utils-isEmpty'
+                    },
+                    {
+                        title: 'judgeType 类型判断',
+                        path: '/componentDocs/utils/mt-utils-judgeType'
+                    },
+                    {
+                        title: 'ObjectGetItem 获取对应值',
+                        path: '/componentDocs/utils/mt-utils-objectGetItem'
+                    },
+                    {
                         title: '时间格式化',
                         path: '/componentDocs/utils/mt-utils-formatDate'
                     },
                     {
                         title: '附件地址完善',
                         path: '/componentDocs/utils/mt-utils-prefixUrl'
-                    },
-                    {
-                        title: 'isEmpty 判空',
-                        path: '/componentDocs/utils/mt-utils-isEmpty'
                     },
                 ]
             },
