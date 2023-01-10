@@ -206,6 +206,10 @@ module.exports = {
                         path: '/componentDocs/utils/mt-utils-file'
                     },
                     {
+                        title: '附件地址完善',
+                        path: '/componentDocs/utils/mt-utils-prefixUrl'
+                    },
+                    {
                         title: '水印背景',
                         path: '/componentDocs/utils/mt-utils-waterMark'
                     },
@@ -224,10 +228,6 @@ module.exports = {
                     {
                         title: '时间格式化',
                         path: '/componentDocs/utils/mt-utils-formatDate'
-                    },
-                    {
-                        title: '附件地址完善',
-                        path: '/componentDocs/utils/mt-utils-prefixUrl'
                     },
                 ]
             },

@@ -20,7 +20,7 @@
 
 
 <!-- 自定义参数 -->
-<mt-pagination :config="pageConfig"></mt-pagination>
+<mt-pagination :index="2" :config="pageConfig"></mt-pagination>
 ```
 
 ```javascript
@@ -51,6 +51,7 @@ export default {
 | 参数        | 默认值    | 类型        | 说明      | 可选值               | 是否必要  |
 |-----------|--------|-----------|---------|-------------------|-------|
 | totalPage | 10     | `Number`  | 总页数     | -                 | true  |
+| index     | 1      | `Number`  | 当前页数    | -                 | true  |
 | type      | normal | `String`  | 分页类型    | `normal` `simple` | false |
 | showEll   | true   | `Boolean` | 是否显示省略号 | -                 | false |
 | config    | `{}`   | `Object`  | 自定义参数   | -                 | false |
