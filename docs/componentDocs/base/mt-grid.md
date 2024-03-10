@@ -90,12 +90,13 @@ export default {
 
 ### config 说明
 
-| 参数     | 默认值      | 类型   | 说明          | 可选值 |
-| -------- | ----------- | ------ | ------------- | ------ |
-| iconSize  | -           | `String` | icon的大小    | -       |
+| 参数     | 默认值      | 类型   | 说明           | 可选值 |
+| -------- | ----------- | ------ |--------------| ------ |
+| iconWidth  | -           | `String` | icon的宽度      | -       |
+| iconHeight  | -           | `String` | icon的高度      | -       |
 | iconPadding  | `0 0 14rpx 0` | `String` | icon的padding | -      |
-| color    | `#424242`     | `String` | 字体颜色      | -      |
-| fontsize | 24rpx       | `String` | 字体大小      | -      |
+| color    | `#424242`     | `String` | 字体颜色         | -      |
+| fontsize | 24rpx       | `String` | 字体大小         | -      |
 
 ### data 说明
 
