@@ -177,10 +177,10 @@ module.exports = {
         title: "弹出层", // 必要的
         sidebarDepth: 1, // 可选的, 默认值是 1
         children: [
-          // {
-          //   title: "Popup 弹窗",
-          //   path: "/componentDocs/popup/mt-popup",
-          // },
+          {
+            title: "Popup 弹窗",
+            path: "/componentDocs/popup/mt-popup",
+          },
           {
             title: "Modal 模态框",
             path: "/componentDocs/popup/mt-modal",
